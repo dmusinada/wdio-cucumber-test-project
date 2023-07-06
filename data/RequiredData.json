@@ -9,7 +9,7 @@
     "sav_increase_ratetext_field": "12"
   }
   ,
-  "SSNWithequiredData": {
+  "SSNWithRequiredData": {
     "age_text_field": "15",
     "retirement_age_text_field": "70",
     "cur_annaul_income_text_field": "90800",
@@ -80,7 +80,7 @@
     "pre_retirement_roi_text_field": "",
     "post_retirement_roi_text_field": ""
   },
-  "InvalidRetireAge": {
+  "InvalidRetirementAge": {
     "age_text_field": "12",
     "retirement_age_text_field": "10",
     "cur_annaul_income_text_field": "7898878",

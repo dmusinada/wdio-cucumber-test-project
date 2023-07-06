@@ -64,7 +64,7 @@ class RetirementHomePage extends Page {
             err.message = `Pre-retirement calculator is not present on the home page`
             logger.error(err.message)
         }
-        logger.info(`I have verified the "${calculatorType}" calculator is present on the home page`)   
+        logger.info(`User has verified the "${calculatorType}" calculator is present on the home page`)   
     }
 
     /**This function is to submit/update the pre-retirement calculator */
@@ -115,7 +115,7 @@ class RetirementHomePage extends Page {
         }
         await this.click(await this.calculate_btn)
         logger.info(`Successfully Click on the calculate button`)
-        logger.info(`I have verified that the user is able to "${submit_type}" with "${fieldType}" the calculator and click on calculate`) 
+        logger.info(`User is able to "${submit_type}" with "${fieldType}" the calculator and click on calculate button Successfully`) 
     }
 
     /**This function is to validate the success message displayed on the screen */
@@ -127,7 +127,7 @@ class RetirementHomePage extends Page {
             err.message = `There is some error after updating the fields on the calculator`
             logger.error(err.message)
         }
-        logger.info(`I have verified that we are on the success page`)
+        logger.info(`User is on the results page successfully`)
     }
 
     /**This function is to validate the Error messages displayed on the screen */
@@ -159,7 +159,7 @@ class RetirementHomePage extends Page {
             await this.compareTextElement(await this.retirement_error_msg, "Planned retirement age must be greater than current age")
             break;  
        }
-        logger.info(`I have verified that there is an error message for "${InvalidDataType}" type of data displayed on the screen`)   
+        logger.info(`User is able see the error message for "${InvalidDataType}" type of data on the screen Successfully`)   
     }
 
     /**This function is to toggle the ssn benefits fields on the calculator */
@@ -177,7 +177,7 @@ class RetirementHomePage extends Page {
             }
         }
         if (iselement_present) {
-            logger.info(`I have verified that i toggle the ssn benefits to "${toggle_ssn}"`)
+            logger.info(`User is able to toggle the ssn benefits to "${toggle_ssn}" Successfully`)
         } else {
             throw Error("Element is not toggled due to an error")
         }
@@ -193,11 +193,11 @@ class RetirementHomePage extends Page {
             logger.info(`I have verified that the SSN benefits section is present`)
         } else {
             if (await this.IsElementPresent(await this.ssn_override)) {
-                throw Error("Element should not be present")
-            } 
-            logger.info(`I have verified that the SSN benefits section is not present`)
+                throw Error("Element should not be present when the user is untoggle it")
+            }
+            logger.info(`User has verified that the SSN benefits section is not present`)
         }
-        logger.info(`I have verified that the SSN benefits "${IsPresent}" based on the calculator`)
+        logger.info(`User has verified that the SSN benefits "${IsPresent}" based on the calculator`)
     }
 
 }

@@ -15,7 +15,7 @@ export default class Page{
         logger.info(`<< Launching the base url >>`)
         await browser.url(path)
         await browser.maximizeWindow()
-        logger.info(`I have verified that we are on the landing page`) 
+        logger.info(`User is on the landing page successfully`) 
     }
 
     /** This function is to click the webelement */
@@ -25,7 +25,7 @@ export default class Page{
             throw Error(ele.error.message)
         }
         await ele.click()
-        logger.info(`I have successfully click the button`) 
+        logger.info(`User successfully click the button`) 
     }
 
       /** This function is to check and type the value into the text fields */
@@ -36,7 +36,7 @@ export default class Page{
         }
         await ele.click()
         await ele.addValue(text)
-        logger.info(`I have successfully type the ${text.length === 0 ? "empty value" : text} on the text field`) 
+        logger.info(`User successfully type the ${text.length === 0 ? "empty value" : text} on the text field`) 
     }
 
     /** This function is to only check the element present in the DOM*/
@@ -45,7 +45,7 @@ export default class Page{
         if(!ele.elementId){
             throw Error(ele.error.message)
         }
-        logger.info(`I have successfully verified the element with text as ${await ele.getText()} on the page`) 
+        logger.info(`User successfully verified the element with text as ${await ele.getText()} on the page`) 
     }
 
     /** This function is to get the text from the web element*/
@@ -66,7 +66,7 @@ export default class Page{
         let element_text = this.getTextElement(ele)
         try {
             if (await element_text === text) {
-                logger.info(`I have successfully compared the text as "${text}" with the element text as "${element_text}"`) 
+                logger.info(`User successfully compared the text as "${text}" with the element text as "${element_text}"`) 
             }
             else
             {
