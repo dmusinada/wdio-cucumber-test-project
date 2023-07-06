@@ -1,0 +1,38 @@
+{
+  "OnlyWithRequiredData": {
+    "age_text_field": "48",
+    "retirement_age_text_field": "71",
+    "cur_annaul_income_text_field": "213454",
+    "sp_annaul_income_text_field": "324515",
+    "cur_tot_sav_text_field": "450000",
+    "cur_annual_sav_text_field": "122300",
+    "sav_increase_ratetext_field": "12"
+  }
+  ,
+  "SSNWithequiredData": {
+    "age_text_field": "15",
+    "retirement_age_text_field": "70",
+    "cur_annaul_income_text_field": "90800",
+    "sp_annaul_income_text_field": "120000",
+    "cur_tot_sav_text_field": "12908990",
+    "cur_annual_sav_text_field": "12678",
+    "sav_increase_ratetext_field": "3",
+    "ssn_override": "123456"
+  }
+  ,
+  "DefaultCalculatorData": {
+    "age_text_field": "15",
+    "retirement_age_text_field": "70",
+    "cur_annaul_income_text_field": "90800",
+    "sp_annaul_income_text_field": "120000",
+    "cur_tot_sav_text_field": "12908990",
+    "cur_annual_sav_text_field": "12678",
+    "sav_increase_ratetext_field": "3",
+    "ssn_override": "123456",
+    "additional_income_text_field": "12345",
+    "retirement_duration_text_field": "20",
+    "retirement_annual_text_field": "75",
+    "pre_retirement_roi_text_field": "75",
+    "post_retirement_roi_text_field": "75"
+  }
+}
