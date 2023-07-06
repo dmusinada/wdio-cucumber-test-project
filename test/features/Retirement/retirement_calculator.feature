@@ -28,8 +28,8 @@ Feature: Pre-Retirement Calculator
     Scenario Outline: Verify the User shoule be able to validate the error messages for "<InvalidDataType>" present on the calculator
         Given I am on the landing home page
         When I look at the "pre-retirement" Calculator
-          And I should "<SubmitType>" the form with "<Err_msg_type>" on the Calculator and click on "submit"
-        Then I should be able to see the error message displayed for "<Err_msg_type>" on the screen
+          And I should "<SubmitType>" the form with "<InvalidDataType>" on the Calculator and click on "submit"
+        Then I should be able to see the error message displayed for "<InvalidDataType>" on the screen
 
         Examples:
             | SubmitType | InvalidDataType         | 

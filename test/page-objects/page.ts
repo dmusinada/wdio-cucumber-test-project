@@ -46,7 +46,7 @@ export default class Page{
         if(!ele.elementId){
             throw Error(ele.error.message)
         }
-        logger.info(`I have successfully verified the ${await ele.getText()} on the page`) 
+        logger.info(`I have successfully verified the element with text as ${await ele.getText()} on the page`) 
     }
 
     /** This function is to get the text from the web element*/
@@ -67,14 +67,14 @@ export default class Page{
         let element_text = this.getTextElement(ele)
         try {
             if (await element_text === text) {
-                logger.info(`I have successfully compared the text "${text}" with the element text`) 
+                logger.info(`I have successfully compared the text as "${text}" with the element text as "${element_text}"`) 
             }
             else
             {
                 throw Error(ele.error.message)
             }
         } catch (err) {
-            logger.error(`Input Text is not compared for the element text`)
+            logger.error(`Input Text "${text}" is not compared for the element text "${element_text}"`)
         }
     }
 
