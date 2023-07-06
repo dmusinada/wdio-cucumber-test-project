@@ -1,13 +1,13 @@
 {
-  "name": "wdio-cucumber-test-project",
+  "name": "",
   "version": "1.0.0",
   "description": "wdio test project",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test:debug": "export DEBUG=Y && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@demo1'",
-    "test:E2E": "export DEBUG=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@E2E'",
-    "test:demo": "export HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@smoke'"
+    "test:E2E": "export HEADLESS=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@E2E'",
+    "test:demo": "export HEADLESS=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@E2E'"
   },
   "keywords": [
     "wdio",

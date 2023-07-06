@@ -34,5 +34,66 @@
     "retirement_annual_text_field": "75",
     "pre_retirement_roi_text_field": "75",
     "post_retirement_roi_text_field": "75"
+  },
+  "InvalidCalculatorData": {
+    "age_text_field": "",
+    "retirement_age_text_field": "",
+    "cur_annaul_income_text_field": "",
+    "sp_annaul_income_text_field": "",
+    "cur_tot_sav_text_field": "",
+    "cur_annual_sav_text_field": "",
+    "sav_increase_ratetext_field": "",
+    "ssn_override": "",
+    "additional_income_text_field": "",
+    "retirement_duration_text_field": "",
+    "retirement_annual_text_field": "",
+    "pre_retirement_roi_text_field": "",
+    "post_retirement_roi_text_field": ""
+  },
+  "InvalidAgeGr100": {
+    "age_text_field": "12345",
+    "retirement_age_text_field": "4565",
+    "cur_annaul_income_text_field": "7898878",
+    "sp_annaul_income_text_field": "7898878",
+    "cur_tot_sav_text_field": "7898878",
+    "cur_annual_sav_text_field": "7898878",
+    "sav_increase_ratetext_field": "234",
+    "ssn_override": "",
+    "additional_income_text_field": "3455555",
+    "retirement_duration_text_field": "",
+    "retirement_annual_text_field": "",
+    "pre_retirement_roi_text_field": "",
+    "post_retirement_roi_text_field": ""
+  },
+  "InvalidAge0": {
+    "age_text_field": "0",
+    "retirement_age_text_field": "0",
+    "cur_annaul_income_text_field": "7898878",
+    "sp_annaul_income_text_field": "7898878",
+    "cur_tot_sav_text_field": "7898878",
+    "cur_annual_sav_text_field": "7898878",
+    "sav_increase_ratetext_field": "234",
+    "ssn_override": "",
+    "additional_income_text_field": "3455555",
+    "retirement_duration_text_field": "",
+    "retirement_annual_text_field": "",
+    "pre_retirement_roi_text_field": "",
+    "post_retirement_roi_text_field": ""
+  },
+  "InvalidRetireAge": {
+    "age_text_field": "12",
+    "retirement_age_text_field": "10",
+    "cur_annaul_income_text_field": "7898878",
+    "sp_annaul_income_text_field": "7898878",
+    "cur_tot_sav_text_field": "7898878",
+    "cur_annual_sav_text_field": "7898878",
+    "sav_increase_ratetext_field": "234",
+    "ssn_override": "",
+    "additional_income_text_field": "3455555",
+    "retirement_duration_text_field": "",
+    "retirement_annual_text_field": "",
+    "pre_retirement_roi_text_field": "",
+    "post_retirement_roi_text_field": ""
   }
+
 }

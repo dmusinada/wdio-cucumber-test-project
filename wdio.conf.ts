@@ -1,7 +1,7 @@
 import dotenv from "dotenv"
 dotenv.config()
-let debug = process.env.DEBUG
 let headless = process.env.HEADLESS
+let debug = "N"
 import type { Options } from '@wdio/types'
 export const config: Options.Testrunner = {
     //
@@ -17,7 +17,7 @@ export const config: Options.Testrunner = {
             transpileOnly: true
         }
     },
-    
+
     
     //
     // ==================
@@ -68,9 +68,9 @@ export const config: Options.Testrunner = {
     capabilities: [{
         // capabilities for local browser web tests
         browserName: 'chrome',
-        // 'goog:chromeOptions': {
-        //     args: headless.toUpperCase() === 'Y' ? ['--disable-web-security','--headless', '--disable-dev-shm-usage', '--no-sandbox', '--window-size=1920,1080'] : []// or "firefox", "microsoftedge", "safari"
-        // },
+        'goog:chromeOptions': {
+            args: headless.toUpperCase() === 'Y' ? ['--disable-web-security','--headless', '--disable-dev-shm-usage', '--no-sandbox', '--window-size=1920,1080'] : []// or "firefox", "microsoftedge", "safari"
+        },
         acceptInsecureCerts: true,
         timeouts: { implicit: 10000, pageLoad: 20000, script: 30000}
     }],
@@ -235,7 +235,7 @@ export const config: Options.Testrunner = {
      */
     // before: function (capabilities, specs) {
     //     browser.options["environment"] = config.environment
-    //     browser.options["testDemoUrl"] = config.testDemoUrl
+    //     browser.options["baseUrl"] = config.testDemoUrl
     // },
     /**
      * Runs before a WebdriverIO command gets executed.
