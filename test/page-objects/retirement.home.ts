@@ -171,7 +171,6 @@ class RetirementHomePage extends Page {
         for(let i=0;i<elements.length;i++){
             // select only the required one passed to the function
             if (await elements[i].getText() === toggle_ssn) {
-                browser.pause(5000)
                 await this.click(await elements[i])
                 iselement_present = true
                 break
@@ -193,7 +192,6 @@ class RetirementHomePage extends Page {
             await this.checkElementExists(await this.ssn_override)
             logger.info(`I have verified that the SSN benefits section is present`)
         } else {
-            await browser.pause(5000)
             if (await this.IsElementPresent(await this.ssn_override)) {
                 throw Error("Element should not be present")
             } 

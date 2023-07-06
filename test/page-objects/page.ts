@@ -34,7 +34,6 @@ export default class Page{
         if(!ele.elementId){
             throw Error(ele.error.message)
         }
-        await browser.pause(2000)
         await ele.click()
         await ele.addValue(text)
         logger.info(`I have successfully type the ${text.length === 0 ? "empty value" : text} on the text field`) 
