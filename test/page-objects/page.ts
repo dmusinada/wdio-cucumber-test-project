@@ -14,6 +14,8 @@ export default class Page{
     async navigateTo(path: string) {
         logger.info(`<< Launching the base url >>`)
         await browser.url(path)
+        const actualUrl = await browser.getUrl()
+        chai.expect(path).to.include(actualUrl)
         await browser.maximizeWindow()
         logger.info(`User is on the landing page successfully`) 
     }
@@ -24,6 +26,7 @@ export default class Page{
         if(!ele.elementId) {
             throw Error(ele.error.message)
         }
+        await expect(ele).toBeClickable()
         await ele.click()
         logger.info(`User successfully click the button`) 
     }
@@ -34,6 +37,7 @@ export default class Page{
         if(!ele.elementId){
             throw Error(ele.error.message)
         }
+        await expect(ele).toBeClickable
         await ele.click()
         await ele.addValue(text)
         logger.info(`User successfully type the ${text.length === 0 ? "empty value" : text} on the text field`) 
@@ -79,6 +83,7 @@ export default class Page{
 
     /** This function is to verify the element present on the screen*/
     async IsElementPresent(ele: WebdriverIO.Element){
+        await expect(ele).toBeDisplayed()
         return await ele.isDisplayed()
     }
 
