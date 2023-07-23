@@ -296,14 +296,6 @@ export const config: Options.Testrunner = {
     }
   },
   /**
-   *
-   * Runs after a Cucumber Scenario.
-   * @param {ITestCaseHookParameter} world            world object containing information on pickle and test step
-   * @param {object}                 result           results object containing scenario results
-   * @param {boolean}                result.passed    true if scenario has passed
-   * @param {string}                 result.error     error stack if scenario failed
-   * @param {number}                 result.duration  duration of scenario in milliseconds
-   * @param {object}                 context          Cucumber World object
    */
   // afterScenario: function (world, result, context) {
   // },
